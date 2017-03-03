@@ -1,46 +1,56 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>Crystal Game</title>
-    <script
-      src="https://code.jquery.com/jquery-3.1.1.min.js"
-      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-      crossorigin="anonymous"></script>
-
+    <title>South Park Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"> </head>
+
+<body>
     <div class="container">
-      <div class="row" id="row1">
-        <div class="col-xs-12 col-md-6" id="title">South Park<br />Counting Game</div>
-        <div class="col-xs-8 col-md-6" id="description">
-          <p>Notice that there is a goal number.</p>
-          <p>Each of the characters below is worth a number.</p>
-          <p>Click on the characters to add up to the goal number.</p>
-          <p>If you match you win!  If you go over you lose</p>
-          <p>The values of the characters changes every time, and so does the goal.</p>
-          <p>Good luck!</p>
-          </div>
+        <div class="row" id="row1">
+            <div class="col-xs-12 col-md-7" id="title">South Park Counting Game</div>
+            <div class="col-xs-12 col-md-5" id="description">
+                <p>Each of the characters below is worth a number.</p>
+                <p>Click on them to add up to the goal number.</p>
+                <p>If you match you win! If you go over you lose.</p>
+                <p>The values of the characters changes every time, and so does the goal.</p>
+                <p>Good luck!</p>
+            </div>
         </div>
-      <div class="row" id="row2">
-        <div class="col-xs-12 col-sm-6">
-          <p> Total Wins: <span name="totalWinsNumber" id="TotalWinsNumber" ></span></p><p> Total Losses: <span name="TotalLossesNumber" id="TotalLossesNumber" ></span></p>
+        <div class="row top-buffer" id="row2">
+            <div class="col-xs-12 col-sm-3 col-sm-offset-3">
+                <p> Total Wins: <span name="totalWinsNumber" id="TotalWinsNumber"></span></p>
+                <p> Total Losses: <span name="TotalLossesNumber" id="TotalLossesNumber"></span></p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p> Goal Number: <span name="CurrentGoalNumber" id="CurrentGoalNumber"></span></p>
+                <p> Your Number: <span name="CurrentNumber" id="CurrentNumber"></span></p>
+            </div>
         </div>
-        <div class="col-xs-12 col-sm-6">
-          <p> Current Goal: <span name="CurrentGoalNumber" id="CurrentGoalNumber"></span></p><p> Your Number: <span name="CurrentNumber" id="CurrentNumber"></span></p>
-      </div>
-      <div class="row" id="row3"></div>
-    </div>
-    <script src="assets/javascript/game.js"></script>
-  </body>
+        <div class="row col-xs-12 col-md-offset-3 col-md-7 top-buffer" id="row3">
+            <div class="container-fluid col-xs-6 col-md-3 thecharacter Cartman" name="Cartman">
+                <img src="assets/images/cartman.jpg" alt="Cartman">
+            </div>
+            <div class="container-fluid col-xs-6 col-md-3 thecharacter Stan" name="Stan">
+                <img src="assets/images/stan.jpg" alt="Stan">
+            </div>
+            <div class="container-fluid col-xs-6 col-md-3 thecharacter Kyle">
+                <img src="assets/images/kyle.jpg" alt="Kyle">
+            </div>
+            <div class="container-fluid col-xs-6 col-md-3 thecharacter Kenny" name="Kenny">
+                <img src="assets/images/kenny.jpg" alt="Kenny">
+            </div>
+        </div>
+        <script src="assets/javascript/game.js"></script>
+</body>
+
 </html>

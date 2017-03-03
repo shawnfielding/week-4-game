@@ -5,20 +5,34 @@
   src: url("../fonts/south park.ttf");
 }
 
+*{
+    font-family: "South Park";
+    
+}
+#row3 {
+    text-align: right;
+}
 
 #title{
+    font-family: "South Park";
   line-height: 5em;
   font-size: xx-large;
-  font-family: "South Park";
+
 }
+.top-buffer { margin-top:50px; }
 
 #description{
-  font-family: "South Park";
-  font
-
-
+    line-height: 1.5em;
 }
 
-.character {
+p{
+  font-family: "South Park";
+}
+
+.thecharacter {
 height:100px;
+}
+
+img {
+    height:100%;
 }
